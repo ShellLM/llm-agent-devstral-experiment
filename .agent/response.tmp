@@ -1,7 +1,7 @@
-### Step 4: Push Updates to the Repository
-Let's commit the changes to the repository and push the updates to the remote repository.
+Now that the sub-agents have completed their tasks, let's proceed with pushing the updates to the repository.
 
 <CODE>
+cd ~/Projects/llm-agent-devstral-experiment
 git add .
 git commit -m "Add introduction to deepbloom experiment"
 git push origin main
