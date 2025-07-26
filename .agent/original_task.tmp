@@ -1,15 +1,173 @@
 <CODE>
-mkdir /home/thomas/Projects/llm-agent-devstral-experiment
-cd /home/thomas/Projects/llm-agent-devstral-experiment
-pwd
+cat -n TASK.md
 </CODE>
-/home/thomas/Projects/llm-agent-devstral-experiment
+     1	"### Context:
+     2	- **Directory Structure:**
+     3	  ```
+     4	  /home/thomas/Projects/llm-agent-devstral-experiment
+     5	  .
+     6	  └── README.md
+     7	
+     8	  1 directory, 1 file
+     9	  total 4.0K
+    10	  drwxr-xr-x 1 thomas thomas  128 Jul 26 02:51 .git
+    11	  -rw-r--r-- 1 thomas thomas  696 Jul 26 02:51 README.md
+    12	  drwxr-xr-x 1 thomas thomas  208 Jul 26 02:06 .agent
+    13	  drwxr-xr-x 1 thomas thomas   38 Jul 26 01:32 .
+    14	  drwxr-xr-x 1 thomas root   2.2K Jul 26 01:24 ..
+    15	  .agent
+    16	  ├── awareness_response.tmp
+    17	  ├── LLM_CLI.md
+    18	  ├── original_task.tmp
+    19	  ├── recordings
+    20	  │   ├── deepbloom_20250726_013219.cast
+    21	  │   ├── deepbloom_20250726_025134.cast
+    22	  │   └── deepbloom_20250726_025826.cast
+    23	  ├── response.tmp
+    24	  ├── session_state.sh
+    25	  └── version_info.json
+    26	
+    27	  2 directories, 9 files
+    28	  ```
+    29	
+    30	- **LLM CLI Help:**
+    31	  ```
+    32	  llm --help
+    33	  Usage: llm [OPTIONS] COMMAND [ARGS]...
+    34	
+    35	  Access Large Language Models from the command-line
+    36	
+    37	  Documentation: https://llm.datasette.io/
+    38	
+    39	  LLM can run models from many different providers. Consult the plugin
+    40	  directory for a list of available models:
+    41	
+    42	  https://llm.datasette.io/en/stable/plugins/directory.html
+    43	
+    44	  To get started with OpenAI, obtain an API key from them and:
+    45	
+    46	      $ llm keys set openai
+    47	      Enter key: ...
+    48	
+    49	  Then execute a prompt like this:
+    50	
+    51	      llm 'Five outrageous names for a pet pelican'
+    52	
+    53	  For a full list of prompting options run:
+    54	
+    55	      llm prompt --help
+    56	
+    57	  Options:
+    58	    --version   Show the version and exit.
+    59	    -h, --help  Show this message and exit.
+    60	
+    61	  Commands:
+    62	    prompt*       Execute a prompt
+    63	    aliases       Manage model aliases
+    64	    chat          Hold an ongoing chat with a model.
+    65	    collections   View and manage collections of embeddings
+    66	    consortium    Commands for managing and running model consortiums
+    67	    embed         Embed text and store or return the result
+    68	    embed-models  Manage available embedding models
+    69	    embed-multi   Store embeddings for multiple strings at once in the...
+    70	    feedback+1    Provide positive feedback to the last prompt / response.
+    71	    feedback-1    Provide negative feedback to the last prompt / response.
+    72	    fragments     Manage fragments that are stored in the database
+    73	    install       Install packages from PyPI into the same environment as LLM
+    74	    jina          Jina AI API command-line interface.
+    75	    keys          Manage stored API keys for different models
+    76	    logs          Tools for exploring logged prompts and responses
+    77	    models        Manage available models
+    78	    openai        Commands for working directly with the OpenAI API
+    79	    openrouter    Commands relating to the llm-openrouter plugin
+    80	    plugins       List installed plugins
+    81	    schemas       Manage stored schemas
+    82	    similar       Return top N similar IDs from a collection using cosine...
+    83	    templates     Manage stored prompt templates
+    84	    tools         Manage tools that can be made available to LLMs
+    85	    uninstall     Uninstall Python packages from the LLM environment
+    86	  ```
+    87	
+    88	### Task Breakdown:
+    89	
+    90	#### Independent Tasks:
+    91	1. **Explore the `.agent` Directory:**
+    92	   - List the contents of the `.agent` directory.
+    93	   - Identify any interesting files or directories.
+    94	
+    95	2. **Research the `llm` Command-Line Tool:**
+    96	   - Read the `LLM_CLI.md` file for instructions on using the `llm` command-line tool.
+    97	   - Identify how to use the `llm` tool to interact with documents using fragments.
+    98	
+    99	3. **Write an Introduction to the Deepbloom Experiment:**
+   100	   - Research the deepbloom experiment.
+   101	   - Write a short introduction to the experiment in the `README.md`.
+   102	
+   103	4. **Push Updates to the Repository:**
+   104	   - Commit the changes to the repository.
+   105	   - Push the updates to the remote repository.
+   106	
+   107	#### Dependent Tasks:
+   108	1. **Check the Contents of the `.agent` Directory:**
+   109	   - Use the `ls -alht .agent` command to list the contents of the `.agent` directory.
+   110	
+   111	2. **Research the `llm` Command-Line Tool:**
+   112	   - Use the `llm --help` command to understand the available options and commands.
+   113	   - Read the `LLM_CLI.md` file for specific instructions.
+   114	
+   115	3. **Write an Introduction to the Deepbloom Experiment:**
+   116	   - Use the `llm` tool to gather information about the deepbloom experiment.
+   117	   - Write a short introduction in the `README.md`.
+   118	
+   119	4. **Push Updates to the Repository:**
+   120	   - Commit the changes to the repository.
+   121	   - Push the updates to the remote repository.
+   122	
+   123	### Next Steps:
+   124	1. **Explore the `.agent` Directory:**
+   125	   ```bash
+   126	   ls -alht .agent
+   127	   ```
+   128	
+   129	2. **Research the `llm` Command-Line Tool:**
+   130	   ```bash
+   131	   cat .agent/LLM_CLI.md | llm -m devstral 'how do I ask talk to my documents using fragments in llm'
+   132	   ```
+   133	
+   134	3. **Write an Introduction to the Deepbloom Experiment:**
+   135	   - Use the `llm` tool to gather information about the deepbloom experiment.
+   136	   - Write a short introduction in the `README.md`.
+   137	
+   138	4. **Push Updates to the Repository:**
+   139	   ```bash
+   140	   git add .
+   141	   git commit -m "Add introduction to deepbloom experiment"
+   142	   git push origin main
+   143	   ```
+   144	
+   145	### Final Steps:
+   146	- **Zenity Input Box:**
+   147	  - Use Zenity to prompt for confirmation before committing changes.
+   148	  ```bash
+   149	  zenity --question --text="Are you sure you want to commit these changes?"
+   150	  ```
+   151	
+   152	### Conclusion:
+   153	By breaking down the task into smaller, manageable parts and ensuring all available context is provided, we can execute the task efficiently and accurately.
 
 
-Help me quickly create a new gh project to record experiments using mistral devstral-small-1.1 in the deepbloom llm agent harness. in the deepbloom agent harness... 
-I have created the empty directory already. You are here. 
-Now you must do everything else using all the tools available in linux (git, gh cli, llm cli etc) You have complete system access and internet access. 
+Do the needfull. create a subagent for each independent task and then complete the remaining tasks yourself.
+WARNING: You MUST NOT call multiple deepbloom requests from the same dir (every turn your working dir sets to the one you started in) it causes problems due to the nature of each deepbloom process requiring a lock on .agent where it writes its prompts and processes responses. Therefor, when you do run parallel deepbloom agents, you must first create git worktree ABOVE this directory, cd into it and call the deepbloom function from there with the task. Prompting it commit and then either a PR or another automated merge process that you, as the main agent can undertake.
 
-WARNING: Be extremly careful not to ever perform any destructive actions whatsoever. Ask the user for verification before taking actions beside read-only activities.
+If that works think of something else to show off your skills and document the progress in the gh repo.
 
-For speed you can run multiple commands in the same response. Just be careful to include verification of work at each stage.
+e.g. 
+<CODE>
+mkdir ~/Projects/llm-agent-experiments && cd ~/Projects/llm-agent-devstral
+gh repo clone shelllm/llm-agent-devstral
+git worktree command
+</CODE>
+<CODE>
+cd ~/Projects/llm-agent-experiments
+deepbloom 'read file/path containing instructions for work needed in project. Commit and push frequently to your branch. Then merge to main or PR and then summarise your work and exit
+</CODE>
