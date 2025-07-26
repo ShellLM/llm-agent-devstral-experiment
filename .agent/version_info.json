@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-07-26T00:32:21Z",
+  "agent_path": "/home/thomas/Projects/claude.sh/agent_core_modified.sh.bak",
+  "git": {
+    "branch": "HEAD",
+    "commit_hash": "15be37054d49781a0f578b942a5f204155879762",
+    "commit_hash_short": "15be370",
+    "status": "dirty",
+    "remote_url": "git@github.com:irthomasthomas/claude.sh.git"
+  },
+  "conversation_id": "01k122a8gbbxv9pff5dwpeh40g",
+  "session_id": "e685b47c-7171-4cc3-90cd-b9b2532b092b"
+}

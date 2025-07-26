@@ -1,0 +1,8 @@
+The README file has been created successfully. Now, let's configure Git with your username and email (please provide them if you haven't configured them yet):
+
+<CODE>
+git config user.name "Thomas"
+git config user.email "thomas@example.com"
+git add .
+git commit -m "Initial commit with README"
+

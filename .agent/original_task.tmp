@@ -1,0 +1,15 @@
+<CODE>
+mkdir /home/thomas/Projects/llm-agent-devstral-experiment
+cd /home/thomas/Projects/llm-agent-devstral-experiment
+pwd
+</CODE>
+/home/thomas/Projects/llm-agent-devstral-experiment
+
+
+Help me quickly create a new gh project to record experiments using mistral devstral-small-1.1 in the deepbloom llm agent harness. in the deepbloom agent harness... 
+I have created the empty directory already. You are here. 
+Now you must do everything else using all the tools available in linux (git, gh cli, llm cli etc) You have complete system access and internet access. 
+
+WARNING: Be extremly careful not to ever perform any destructive actions whatsoever. Ask the user for verification before taking actions beside read-only activities.
+
+For speed you can run multiple commands in the same response. Just be careful to include verification of work at each stage.
