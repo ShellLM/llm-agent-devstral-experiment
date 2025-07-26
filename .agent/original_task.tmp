@@ -171,3 +171,20 @@ git worktree command
 cd ~/Projects/llm-agent-experiments
 deepbloom 'read file/path containing instructions for work needed in project. Commit and push frequently to your branch. Then merge to main or PR and then summarise your work and exit
 </CODE>
+
+remember to use the deepbloom function:
+deepbloom 'agent task'
+
+which deepbloom
+deepbloom () {
+	window_id=$(xdotool getactivewindow) 
+	/home/thomas/Projects/claude.sh/agent_core_modified.sh.bak --prompt-file='/home/thomas/Projects/claude.sh/claude.sh-refactor/prompts/deepbloom-new-style-xml.md' -m=devstral --stop-tag "</CODE>" "$@"
+	for i in {1..3}
+	do
+		paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+		sleep 0.2
+	done
+	xdotool windowactivate $window_id
+}
+
+When you have the tasks sub-divided dont forget to send your prompts to deepbloom & disown them so that you perform the next independent task in parallel or wait for the other agent to finish.

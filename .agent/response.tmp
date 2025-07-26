@@ -1,12 +1,8 @@
-I have written an introduction to the Deepbloom experiment in the `README.md` file.
-
 ### Step 4: Push Updates to the Repository
-
-Let's commit the changes and push them to the remote repository.
+Let's commit the changes to the repository and push the updates to the remote repository.
 
 <CODE>
-cd /home/thomas/Projects/llm-agent-devstral-experiment
 git add .
-git commit -m "Add introduction to Deepbloom experiment"
+git commit -m "Add introduction to deepbloom experiment"
 git push origin main
 
